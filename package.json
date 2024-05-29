@@ -1,0 +1,41 @@
+{
+  "name": "root",
+  "author": "GILLES MBISSILEU <pro.gillesmbissileu@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "description": "next monorepo templates",
+  "workspaces": [
+    "packages/**",
+    "shared/**"
+  ],
+  "dependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^14.2.3",
+    "postcss": "^8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.3",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "scripts": {
+    "dev-admin": "yarn workspace @apps/admin dev",
+    "build-admin": "yarn workspace @apps/admin build",
+    "start-admin": "yarn workspace @apps/admin start",
+    "lint-admin": "yarn workspace @apps/admin lint",
+    "dev-app": "yarn workspace @apps/app dev",
+    "build-app": "yarn workspace @apps/app build",
+    "start-app": "yarn workspace @apps/app start",
+    "lint-app": "yarn workspace @apps/app lint"
+  }
+}
