@@ -1,5 +1,5 @@
 export interface IButton {
-    onClick: Function
-    label: string
+    onClick: any
+    label?: string
     icon?: any
 }

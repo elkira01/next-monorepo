@@ -1,10 +1,11 @@
 import {IButton} from "../../types/IButton";
+import * as SC from "./styles";
 
 const SubmitButton = (props: IButton) => {
 
-    return<div className="border border-solid p-3 bg-blue-600 cursor-pointer" onClick={props.onClick}>
-        {props.label}
-    </div>
+    return<SC.Button onClick={props.onClick}>
+        {props.label ?? "Submit"}
+    </SC.Button>
 }
 
 export default SubmitButton;
