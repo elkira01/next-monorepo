@@ -30,6 +30,7 @@
     "node": ">=18.17.0"
   },
   "scripts": {
+    "build": "yarn workspace @apps/admin build && yarn workspace @apps/app build",
     "dev-admin": "yarn workspace @apps/admin dev",
     "build-admin": "yarn workspace @apps/admin build",
     "start-admin": "yarn workspace @apps/admin start",
