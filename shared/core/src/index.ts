@@ -1,1 +1,1 @@
-export const oppositeNUmber = -1;
+export const defaultValue = -1;

@@ -5,13 +5,14 @@
     "skipLibCheck": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "plugins": [
       {
         "name": "next"

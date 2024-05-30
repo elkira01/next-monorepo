@@ -1,18 +1,22 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
-    "jsx": "preserve",
-    "strict": false
+    "jsx": "preserve"
   },
   "include": [
     "src",
-    "build/types/**/*.ts"
+    "build/types/**/*.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "build"

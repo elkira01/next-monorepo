@@ -2,16 +2,18 @@
   "name": "@shared/core",
   "version": "1.0.0",
   "main": "./src/index.ts",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "lint:ts": "tsc"
   },
-  "type": "module",
   "peerDependencies": {
+    "next": "*",
     "react": "*",
     "react-dom": "*",
     "react-router-dom": "*",
-    "react-scripts": "*",
-    "next": "*"
+    "react-scripts": "*"
+  },
+  "devDependencies": {
+    "styled-components": "^6.1.11"
   }
 }
