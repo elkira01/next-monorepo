@@ -1,12 +1,10 @@
 'use client'
 
-import {useEffect, useState} from "react";
+import {SubmitButton} from "@shared/core/src/ui/common";
 
 export default function Home() {
-  const [ab, setAb] = useState<number>(0)
 
-  useEffect(() => {
-  },[])
-
-  return<></>
+  return<main className="container p-10 flex justify-center">
+    <SubmitButton label="Click Me!!" onClick={() => console.log("Clicked !!!")}/>
+  </main>
 }
