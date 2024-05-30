@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "next-monorepo",
   "author": "GILLES MBISSILEU <pro.gillesmbissileu@gmail.com>",
   "private": true,
   "license": "MIT",
@@ -36,6 +36,7 @@
     "dev-app": "yarn workspace @apps/app dev",
     "build-app": "yarn workspace @apps/app build",
     "start-app": "yarn workspace @apps/app start",
-    "lint-app": "yarn workspace @apps/app lint"
+    "lint-app": "yarn workspace @apps/app lint",
+    "lint-shared": "yarn workspace @shared/core lint:ts"
   }
 }

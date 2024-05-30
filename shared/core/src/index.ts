@@ -1,0 +1,1 @@
+export const oppositeNUmber = -1;

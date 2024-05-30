@@ -3,19 +3,24 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "baseUrl": "./src",
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
+    "forceConsistentCasingInFileNames": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "paths": {
+      "@apps/*": ["packages/*/src"],
+      "@shared/*": ["shared/*/src"]
+    }
   },
   "include": [
     "next-env.d.ts",

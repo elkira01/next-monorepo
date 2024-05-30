@@ -1,6 +1,17 @@
 {
-  "name": "core",
+  "name": "@shared/core",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "tsc"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*",
+    "next": "*"
+  }
 }

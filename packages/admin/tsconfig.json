@@ -1,13 +1,13 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "jsx": "preserve",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "strict": false
   },
   "include": [
     "src",
